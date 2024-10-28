@@ -1,0 +1,85 @@
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Roboto'),
+		url('fonts/roboto-v29-latin-ext_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local('Roboto Bold'),
+		url('fonts/roboto-v29-latin-ext_latin-700.woff2') format('woff2');
+}
+
+body {
+	background-color: #1b1a1f;
+	color: white;
+	font-family: Roboto, sans-serif;
+
+	max-width: 720px;
+	margin: 15px auto;
+}
+
+a {
+	color: lime;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.top {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+h1 {
+	font-size: 26pt;
+}
+
+.location-retrieval, #location-info {
+	text-align: center;
+}
+
+#location-info {
+	display: none;
+	background-color: rgba(0,0,0,0.2);
+
+	padding: 5px 25px;
+	max-width: 400px;
+	margin: auto;
+}
+
+#coordinates {
+	max-width: 300px;
+	margin-bottom: 25px;
+}
+#coordinates p {
+	text-align: right;
+}
+#coordinates p span {
+	display: inline-block;
+	font-family: monospace;
+	font-size: 12pt;
+	width: 120px;
+}
+
+button {
+	background-color: #454749;
+	border: 0;
+	border-radius: 15px;
+	font-size: 16pt;
+	color: #ffffff;
+	padding: 15px 30px;
+	margin: 1em 0;
+}
+button:hover {
+	background-color: #3d74ac;
+	color: white;
+}
