@@ -20,47 +20,52 @@
 	<link rel="manifest" href="site.webmanifest">
 </head>
 <body>
-	<div class="top">
+	<header class="top">
 		<h1>Browser geolocation viewer</h1>
 
 		<p class="tagline">Retrieve your geolocation information as your browser sees it.</p>
-	</div>
+	</header>
 
-	<div class="location-retrieval">
-		<button id="location-btn" onclick="getLocation()">Get Location</button>
+	<main>
+		<div class="location-retrieval">
+			<button id="location-btn" onclick="getLocation()">Get Location</button>
 
-		<p id="status">Press the button to retrieve location information</p>
-	</div>
+			<p id="status">Press the button to retrieve location information</p>
+		</div>
 
-	<div id="location-info">
-		<div id="coordinates">
-			<p>
-				<strong>Accuracy
-					<abbr title="How accurate the browser considers the location to be.">(?)</abbr>:</strong>
-				<span id="pos-acc"></span>
-			</p>
-			<p>
-				<strong>Latitude:</strong>
-				<span id="pos-lat"></span>
-			</p>
-			<p>
-				<strong>Longitude:</strong>
-				<span id="pos-long"></span>
-			</p>
-			<p>
-				<strong>
-					Plus code
-					<a class="help" href="https://en.wikipedia.org/wiki/Open_Location_Code" target="_blank">(?)</a>:
-				</strong>
-				<span id="pos-plus"></span>
+		<div id="location-info">
+			<div id="coordinates">
+				<p>
+					<strong>Accuracy
+						<abbr title="How accurate the browser considers the location to be.">(?)</abbr>:</strong>
+					<span id="pos-acc"></span>
+				</p>
+				<p>
+					<strong>Latitude:</strong>
+					<span id="pos-lat"></span>
+				</p>
+				<p>
+					<strong>Longitude:</strong>
+					<span id="pos-long"></span>
+				</p>
+				<p>
+					<strong>
+						Plus code
+						<a class="help" href="https://en.wikipedia.org/wiki/Open_Location_Code" target="_blank">(?)</a>:
+					</strong>
+					<span id="pos-plus"></span>
+				</p>
+			</div>
+			<p id="maps-links">
+				<a id="googlemaps-link" href="" target="_blank">View on Google Maps</a> |
+				<a id="openstreetmap-link" href="" target="_blank">View on OpenStreetMap</a>
 			</p>
 		</div>
-		<p id="maps-links">
-			<a id="googlemaps-link" href="" target="_blank">View on Google Maps</a> |
-			<a id="openstreetmap-link" href="" target="_blank">View on OpenStreetMap</a>
-		</p>
-	</div>
+	</main>
 
+	<footer>
+		Made by <a href="https://voxelmanip.se">ROllerozxa</a> - <a href="https://github.com/rollerozxa/gps.voxelmanip.se">Source code</a>
+	</footer>
 
 	<script src="js/openlocationcode.js"></script>
 	<script src="js/script.js"></script>

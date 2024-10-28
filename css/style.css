@@ -23,11 +23,25 @@ body {
 	font-family: Roboto, sans-serif;
 
 	max-width: 720px;
-	margin: 15px auto;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+}
+
+footer {
+	text-align: center;
+	margin: auto;
+	margin-top: 5em;
+	padding: 15px 0;
 }
 
 a {
-	color: lime;
+	color: #5fff5f;
 	text-decoration: none;
 }
 a:hover {
@@ -80,6 +94,6 @@ button {
 	margin: 1em 0;
 }
 button:hover {
-	background-color: #3d74ac;
+	background-color: #409e33;
 	color: white;
 }
