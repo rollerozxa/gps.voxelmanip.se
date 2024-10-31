@@ -10,7 +10,7 @@ function getLocation() {
 		$("status").innerText = "Attempting to get your location... Your browser will likely prompt you for permission.";
 		navigator.geolocation.getCurrentPosition(showPosition, showError);
 	} else
-		$("status").innerText = "Geolocation is not supported by this browser.";
+		$("status").innerText = "The geolocation API is not supported by this browser.";
 }
 
 function accuracy(acc) {
@@ -43,9 +43,9 @@ function showPosition(position) {
 
 function showError(error) {
 	const message = {
-		[error.PERMISSION_DENIED]: "User denied the request for Geolocation.",
-		[error.POSITION_UNAVAILABLE]: "Location information is unavailable.",
-		[error.TIMEOUT]: "The request to get user location timed out.",
+		[error.PERMISSION_DENIED]: "The location permission was denied, please accept it to view location data.",
+		[error.POSITION_UNAVAILABLE]: "Location information is unavailable. (Is GPS or location data enabled in your OS?)",
+		[error.TIMEOUT]: "The request to get location permission timed out.",
 		[error.UNKNOWN_ERROR]: "An unknown error occurred."
 	}[error.code] || "An unknown error occurred.";
 
